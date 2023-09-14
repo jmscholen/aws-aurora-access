@@ -2,7 +2,7 @@ output "env" {
   value = [
     {
       name  = "MYSQL_HOST"
-      value = local.db_subdomain
+      value = local.cluster_endpoint
     },
     {
       name  = "MYSQL_USER"
@@ -23,7 +23,7 @@ output "secrets" {
     },
     {
       name  = "MYSQL_URL"
-      value = "mysql2://${urlencode(local.username)}:${urlencode(random_password.this.result)}@${local.db_endpoint}/${urlencode(local.database_name)}"
+      value = "mysql2://${urlencode(local.username)}:${urlencode(random_password.this.result)}@${local.cluster_endpoint}/${urlencode(local.database_name)}"
     }
   ]
 }
