@@ -1,14 +1,14 @@
-org_name: nullstone
-name: aws-mysql-access
-friendly_name: MySQL Access
-description: Grants an application access to a newly-created mysql database managed by AWS
+org_name: jmscholen
+name: aws-aurora-access
+friendly_name: Aurora Access
+description: Grants an application access to a newly-created auora database managed by AWS
 category: capability
 subcategory: datastores
 provider_types:
     - aws
 platform: mysql
 subplatform: ""
-type: capability/mysql-access/aws
+type: capability/aurora-mysql-access/aws
 appCategories:
     - container
     - serverless
