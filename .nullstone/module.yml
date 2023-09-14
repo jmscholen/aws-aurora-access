@@ -1,7 +1,7 @@
 org_name: jmscholen
-name: aws-aurora-access
-friendly_name: Aurora Access
-description: Grants an application access to a newly-created auora database managed by AWS
+name: aws-aurora-mysql-access
+friendly_name: Aurora MYSQL Access
+description: Grants an application access to a newly-created Auora MYSQL database managed by AWS
 category: capability
 subcategory: datastores
 provider_types:
@@ -13,4 +13,4 @@ appCategories:
     - container
     - serverless
     - server
-is_public: false
+is_public: true
