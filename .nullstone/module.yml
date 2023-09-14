@@ -13,4 +13,4 @@ appCategories:
     - container
     - serverless
     - server
-is_public: true
+is_public: false
